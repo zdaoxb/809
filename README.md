@@ -17,11 +17,11 @@ api文件为index.js
 
 ### api使用方法如下
 
-- 先 node i
+- 先 npm i
 - 如果报错就
-- node install express
-- node install got
-- node install crypto-j
+- npm install express
+- npm install got
+- npm install crypto-j
 - 然后node index
 - 保留后台请安装screen
 - http://你的ip或者域名:3000/fuck?ip=你的ip&port=你的端口

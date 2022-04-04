@@ -105,7 +105,7 @@ $tokenData = send_post($authUrl,'',$data);
 $csrfToken = midstr($tokenData,'csrfToken":"','","');
 $jSessionID = midstr($tokenData,'jSessionID":"','","');
 $header = "X_CSRFToken: ".$csrfToken."\r\nCookie: CSRFSESSION=".$csrfToken.";JSESSIONID=".$jSessionID."\r\n";
-$data = '{"VSCIP":"你的ip:33200","codeRate":"1","contentId":"fe2daad63b6e46ea920275307cbd31b1","contentIdV6":"20729754","mediaIdV6":"20729916","subContentId":"fe2daad63b6e46ea920275307cbd31b1","userId":"02910308087","userIp":"192.168.7.188","videoName":"极盗行动","videoType":"1"}';
+$data = '{"VSCIP":"152.67.208.149:33200","codeRate":"1","contentId":"fe2daad63b6e46ea920275307cbd31b1","contentIdV6":"20729754","mediaIdV6":"20729916","subContentId":"fe2daad63b6e46ea920275307cbd31b1","userId":"02910308087","userIp":"192.168.7.188","videoName":"极盗行动","videoType":"1"}';
 $tokenData = send_post($queryVideoUrl,$header,$data);
 $data = midstr($tokenData,'tvURL":"','","');
 $tokenData = send_get($data);
